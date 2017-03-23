@@ -1,0 +1,137 @@
+@import "colors"
+@import "mixins"
+
+.home
+  &-slider
+    height: 340px
+    padding: 6px 0
+    box-sizing: border-box
+    overflow: hidden
+    position: relative
+    img
+      width: 100%
+    &-info
+      background: $blue
+      padding: 15px 50px
+      color: #fff
+      display: flex
+      justify-content: space-between
+      align-items: center
+      p
+        font-size: 1em
+      a
+        display: inline-block
+        color: #fff
+        font-size: 1.3em
+        &:nth-child(2)
+          margin-right: 10px
+      img
+        margin-right: 10px
+    &-contacts
+      display: flex
+      align-items: center
+    .slick-arrow
+      z-index: 9999
+      background: rgba(#fff, 0.6) url('../assets/img/arrow.png')
+      background-repeat: no-repeat !important
+      background-size: 45px !important
+      background-position: 35% 50% !important
+      width: 75px
+      height: 70px
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      outline: 0
+      border: 0
+      text-indent: -99999px
+      border-radius: 50%
+      cursor: pointer
+      &:hover
+        background: #fff url('../assets/img/arrow.png')
+        background-repeat: no-repeat !important
+        background-size: 45px !important
+        background-position: 35% 50% !important
+    .slick-prev
+      left: 5%
+    .slick-next
+      right: 5%
+    .slick-next, .slick-next:focus, .slick-next:hover
+      transform: scale(-1, 1) translateY(-50%)
+    .slick-dots
+      position: absolute
+      bottom: 20px
+      left: 50%
+      transform: translateX(-50%)
+      display: flex
+      li
+        width: 15px
+        height: 15px
+        border-radius: 50%
+        background: #d8f0ff
+        text-indent: -9999px
+        margin: 7px
+        cursor: pointer
+        &:hover, &.slick-active
+          background: $yellow
+
+  &__content
+    display: flex
+  &__aside
+    flex: 1
+    padding: 0 60px 0 0
+    width: 30%
+    box-sizing: border-box
+  &__article
+    flex: 3
+    width: 70%
+
+.aside-home
+  &__item
+    color: rgb(52, 52, 52)
+    position: relative
+    height: 160px
+    padding-top: 20px
+    &:hover
+      .page-btn
+        background: $yellow
+        border-color: $yellow
+        color: $blue
+    .date
+      font-size: 0.8em
+    .title
+      font-size: 1em
+      font-weight: bold
+      margin: 5px 0
+    .desc
+      font-size: 0.9em
+    .page-btn
+      position: absolute
+      right: 0
+      bottom: 0
+
+.article-home
+  &__content
+    font-size: 1em
+    height: 515px
+    padding-bottom: 50px
+    position: relative
+    box-sizing: border-box
+    overflow: hidden
+    img
+      float: left
+      margin: 0 10px 5px 0
+      height: 165px
+    .page-btn
+      position: absolute
+      right: 0
+      bottom: 0
+  .section-title
+    padding-bottom: 25px
+  &__text
+    p
+      margin: 15px 0
+    a
+      color: $sky
+      display: inline-block
+      &:hover
+        text-decoration: underline

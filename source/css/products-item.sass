@@ -1,0 +1,138 @@
+@import "colors"
+@import "mixins"
+
+
+.products-item
+  &__desc
+    background: $gray
+    padding: 15px
+    margin: 30px 0
+    &:after
+      content: ''
+      clear: both
+      display: table
+    img
+      float: left
+      width: 150px
+      margin-right: 25px
+  .page-btn
+    margin-top: 45px
+
+.submenu
+  &__content-title
+    font-size: 1em
+    color: $blue
+    font-weight: bold
+    text-transform: uppercase
+    margin: 45px 0 5px
+  &__desc
+    &::after
+      content: ''
+      clear: both
+      display: table
+    img
+      float: left
+      width: 300px
+      margin-right: 25px
+  &__spots
+    background: $gray
+    padding: 10px 13px 30px
+    border-top: 2px solid $blue
+    box-sizing: border-box
+    &::after
+      content: ''
+      clear: both
+      display: table
+  &__spot
+    width: 49%
+    height: 200px
+    min-height: 200px
+    max-height: 200px
+    display: inline-block
+    background: #fff
+    padding: 10px 10px 20px
+    box-sizing: border-box
+    transition: all 0.3s ease
+    cursor: pointer
+    &:nth-child(odd)
+      margin-right: 20px
+    &:hover
+      box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2)
+  &__items
+    display: flex
+    border-bottom: 2px solid $blue
+    margin-bottom: 30px
+    overflow: hidden
+    li
+      padding: 10px 15px
+      width: 200px
+      height: 42px
+      transform: skew(30deg)
+      box-sizing: border-box
+      border: 1px solid $sky
+      border-bottom-color: transparent
+      cursor: pointer
+      transition: all 0.3s ease
+      span
+        display: block
+        transform: skew(-30deg)
+      &:first-child
+        margin: 0 0 0 -15px
+        span
+          position: relative
+          left: 20px
+    li.current
+    	background: $blue
+      border-color: $blue
+    	color: #fff
+  &__content
+  	display: none
+  &__content.current
+      display: inherit
+.spot
+  margin-bottom: 15px
+  &__content
+    display: flex
+    > div
+      flex: 1
+  &__img
+    img
+      width: 75px
+      &:nth-child(even)
+        margin: 0 7px
+  &__title
+    font-size: 1em
+    color: $blue
+    font-weight: bold
+    text-transform: uppercase
+  &__tel
+    display: flex
+    font-size: 1em
+    margin: 10px 20px 10px 0
+    > p
+      margin-right: 30px
+  &__location
+    display: flex
+    align-items: center
+    margin: 15px 0
+    > p
+      margin-right: 10px
+    &-items
+      display: flex
+      justify-content: flex-start
+      flex-wrap: wrap
+      > div
+        background: $blue
+        color: #fff
+        font-weight: bold
+        font-size: 1em
+        text-transform: uppercase
+        width: 60px
+        padding: 5px 10px
+        margin: 5px 5px 0 0
+        white-space: nowrap
+        text-align: center
+        box-sizing: border-box
+  &__link
+    color: #000
+    text-decoration: underline

@@ -1,0 +1,35 @@
+@import "colors"
+
+header
+  background: $sky
+  padding: 15px 60px
+  box-sizing: border-box
+
+.header
+  display: flex
+  justify-content: flex-start
+  padding: 10px 0
+  a
+    color: #fff
+    display: block
+  &__logo
+    width: 197px
+    margin: 0 130px 0 60px
+    img
+      max-width: 100%
+  &__item
+    flex: 1
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 5px 0 15px
+    font-size: 1em
+    color: #fff
+  &__contacts
+    font-size: 1.2em
+  &__contacts, &__time, &__map, &__address
+    display: flex
+    align-items: center
+    img
+      width: 35px
+      margin-right: 15px

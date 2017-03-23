@@ -1,0 +1,152 @@
+@import "colors"
+@import "mixins"
+
+.group-menu
+  padding: 10px 0
+  &__title
+    padding: 15px 3px
+
+.item1
+  background: $sky
+  border: 3px solid $sky
+  color: $sky
+.item2
+  background: #9d4600
+  border: 3px solid #9d4600
+  color: #9d4600
+.item3
+  background: #0eacd9
+  border: 3px solid #0eacd9
+  color: #0eacd9
+.item4
+  background: #ee391c
+  border: 3px solid #ee391c
+  color: #ee391c
+.item5
+  background: #474747
+  border: 3px solid #474747
+  color: #474747
+.item6
+  background: #5dc57a
+  border: 3px solid #5dc57a
+  color: #5dc57a
+.item7
+  background: #ff8500
+  border: 3px solid #ff8500
+  color: #ff8500
+.item8
+  background: #d18b36
+  border: 3px solid #d18b36
+  color: #d18b36
+.item9
+  background: #d76334
+  border: 3px solid #d76334
+  color: #d76334
+.item10
+  background: #1c6bee
+  border: 3px solid #1c6bee
+  color: #1c6bee
+.item11
+  background: #974dbc
+  border: 3px solid #974dbc
+  color: #974dbc
+.item12
+  background: #5f97ae
+  border: 3px solid #5f97ae
+  color: #5f97ae
+.item13
+  background: #ff47d3
+  border: 3px solid #ff47d3
+  color: #ff47d3
+.item14
+  background: #364fcd
+  border: 3px solid #364fcd
+  color: #364fcd
+.item15
+  background: #1aad43
+  border: 3px solid #1aad43
+  color: #1aad43
+.item16
+  background: #1dbaef
+  border: 3px solid #1dbaef
+  color: #1dbaef
+.item17
+  background: #88673e
+  border: 3px solid #88673e
+  color: #88673e
+.item18
+  background: #ffc600
+  border: 3px solid #ffc600
+  color: #ffc600
+.item19
+  background: #76cfed
+  border: 3px solid #76cfed
+  color: #76cfed
+.item20
+  background: #8c8c8c
+  border: 3px solid #8c8c8c
+  color: #8c8c8c
+.item21
+  background: #ff6d00
+  border: 3px solid #ff6d00
+  color: #ff6d00
+.item22
+  background: #dab250
+  border: 3px solid #dab250
+  color: #dab250
+.item23
+  background: #5c5c5c
+  border: 3px solid #5c5c5c
+  color: #5c5c5c
+.item24
+  background: #e65f3f
+  border: 3px solid #e65f3f
+  color: #e65f3f
+
+
+.market-menu
+  .row
+    position: relative
+    text-align: center
+    margin: 0 auto
+  &__item
+    height: 180px
+    display: flex
+    flex-direction: column
+    padding: 10px 5px 3px
+    outline: 1px solid #fff
+    box-sizing: border-box
+    @include transition(all .3s ease)
+    &:hover, &:focus, &:active
+      background: #fff
+      .market-menu__title
+        color: inherit
+
+  &__img
+    width: 80px
+    height: 80px
+    max-height: 80px
+    margin: 0 auto 5px
+    border-radius: 100%
+    border: 3px solid
+    border-color: inherit
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #fff
+    flex: 1
+    img
+      max-width: 100%
+  &__title
+    font-size: 0.9em
+    color: #fff
+    text-transform: uppercase
+    line-height: 1.1
+    text-align: center
+    flex: 1
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    p
+      white-space: nowrap

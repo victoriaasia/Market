@@ -1,0 +1,35 @@
+@import "colors"
+@import "mixins"
+
+
+.breadcrumbs
+  padding-bottom: 45px
+  list-style: none
+  font-size: 0.9em
+  li
+    display: inline-block
+    position: relative
+    margin-left: 10px
+    &:first-child
+      padding-left: 0
+      margin-left: 0
+    &:last-child
+      position: relative
+      color: $sky
+      &::after
+        position: absolute
+        content: ''
+        border-bottom: 1px solid
+        border-color: inherit
+        width: 100%
+        bottom: 0
+        left: 0
+    + li:before
+      position: absolute
+      content: "/\00a0"
+      top: 0
+      left: -10px
+      color: rgb(52, 52, 52)
+    a
+      color: rgb(52, 52, 52)
+      text-decoration: none

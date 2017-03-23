@@ -1,0 +1,51 @@
+@import "colors"
+@import "mixins"
+
+
+// ::-webkit-input-placeholder,
+// ::-moz-placeholder,
+// :-moz-placeholder,
+// :-ms-input-placeholder
+//   color: $blue
+
+nav
+  background: $blue
+
+.main-menu
+  display: flex
+  align-items: center
+  &__item
+    flex: 1
+    text-align: center
+    &-search
+      padding: 5px 10px
+      position: relative
+      input
+        height: 29px
+        width: 200px
+        padding: 0 35px 0 10px
+        border-radius: 0
+        outline: none
+  .search-icon
+    position: absolute
+    background: url('../assets/img/search.png') no-repeat
+    background-size: contain
+    width: 30px
+    height: 20px
+    right: 8px
+    top: 50%
+    transform: translateY(-50%)
+    outline: none
+    border: 0
+    z-index: 999
+    cursor: pointer
+  a
+    display: block
+    font-size: 1em
+    text-transform: uppercase
+    color: #fff
+    padding: 10px 7px
+    @include transition(all .3s ease)
+    &:hover, &:focus, &:active
+      background: $yellow
+      color: $darkBlue
