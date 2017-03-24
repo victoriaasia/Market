@@ -32,7 +32,7 @@ gulp.task('sass', function () {
         cascade: false
       }))
       .pipe(csso())
-    .pipe(sourcemaps.write('source/maps'))
+    .pipe(sourcemaps.write('dest/maps'))
     .pipe(gulp.dest('dest/css'))
     .pipe(browserSync.reload({stream:true}))
 });

@@ -4,7 +4,13 @@
 .pagination > li
   a
     margin: 0 3px
-    background: url('assets/img/nav-arrow.png')
+    height: 23px
+    width: 14px
   &:first-child a,
   &:last-child a
     margin: 0 30px
+    background: url('../assets/img/nav-arrow.png')
+    background-repeat: no-repeat
+    background-position: 45% 50%
+  &:last-child a
+    transform: scale(-1, 1)
