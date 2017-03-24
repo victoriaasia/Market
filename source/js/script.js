@@ -1,4 +1,17 @@
 $(document).ready(function(){
+
+  // header-menu-links
+  var url = document.location.href;
+  var str = url.substr(0, url.lastIndexOf('/'));
+  var nUrl = url.substr(url.lastIndexOf('/')+1);
+  $('.js-menu-link').each(function(){
+      if( $(this).attr('href') === nUrl){
+          $(this).addClass('menu-link-active');
+      };
+  });
+
+  // slider
+
   $('.home-slider').slick({
     infinite: true,
     slidesToShow: 1,
@@ -20,39 +33,29 @@ $(document).ready(function(){
 
   // tab content - products page
 
-  $('.js-items li').click(function(){
-		var tab_id = $(this).attr('data-tab');
+$('.js-items li').click(function(){
+	var tab_id = $(this).attr('data-tab');
 
-		$('.js-items li').removeClass('current');
-		$('.js-content').removeClass('current');
+	$('.js-items li').removeClass('current');
+	$('.js-content').removeClass('current');
 
-		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
-	});
-
-  // modal - rent page
-	// $('.js-title, .js-document').click( function(event){
-	// 	event.preventDefault();
-	// 	$('.overlay').fadeIn(200,
-	// 		function(){
-	// 		$('.js-modal').css('display', 'block').animate({opacity: 1}, 300);
-	//  });
-	// });
-	// $('.js-close, .overlay').click( function(){
-	// 	$('.js-modal').animate({opacity: 0}, 200,
-	// 			function(){
-	// 				$(this).css('display', 'none');
-	// 				$('.overlay').fadeOut(400);
-	// 			}
-	// 		);
-	// });
+	$(this).addClass('current');
+	$("#"+tab_id).addClass('current');
+});
 
 
-  $('#top').on('click', function (e) {
-      e.preventDefault();
-      $('html,body').animate({
-          scrollTop: 0
-      }, 700);
-  });
+//top-btn
+
+// $(window).scroll(function(){
+//     if ($(this).scrollTop() > 100) {
+//         $('.top').fadeIn();
+//     } else {
+//         $('.top').fadeOut();
+//     }
+// });
+// $('.top').click(function(){
+//     $("html, body").animate({ scrollTop: 0 }, 600);
+//     return false;
+// });
 
 });

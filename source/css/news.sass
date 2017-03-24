@@ -8,10 +8,16 @@
   padding: 30px 3px
   position: relative
   border-bottom: 2px solid $blue
+  box-sizing: border-box
   &::after
     content: ''
     clear: both
     display: table
+  &:hover
+    .page-btn
+      background: $yellow
+      border-color: $yellow
+      color: $blue
   img
     float: left
     width: 200px

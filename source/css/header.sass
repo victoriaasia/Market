@@ -13,9 +13,10 @@ header
     color: #fff
     display: block
   &__logo
-    width: 197px
-    margin: 0 160px 0 0
+    flex: 2
+    // margin: 0 160px 0 0
     img
+      width: 197px
       max-width: 100%
   &__item
     flex: 1
@@ -25,6 +26,8 @@ header
     padding: 5px 0 15px
     font-size: 1em
     color: #fff
+    &:nth-child(2)
+      flex: 2
   &__contacts
     font-size: 1.2em
   &__contacts, &__time, &__map, &__address
@@ -33,3 +36,8 @@ header
     img
       width: 35px
       margin-right: 15px
+
+.map-link
+  position: relative
+  &:hover
+    text-decoration: underline

@@ -9,8 +9,6 @@
 </head>
 <body>
 <div class="wrapper">
-<div class="">
-
 <header>
   <div class="header container">
     <a href="index.html" class="header__logo"><img src="assets/img/logo.png" alt=""></a>
@@ -49,11 +47,11 @@
 
   <nav class="header-menu">
     <ul class="header-menu__list container">
-      <li class="header-menu__item"><a href="about.html">о компании</a></li>
-      <li class="header-menu__item"><a href="news.html">новости</a></li>
-      <li class="header-menu__item"><a href="products.html">продукция</a></li>
-      <li class="header-menu__item"><a href="rent.html">арендаторам</a></li>
-      <li class="header-menu__item"><a href="contacts.html">контакты</a></li>
+      <li class="header-menu__item"><a href="about.html" class="js-menu-link">о компании</a></li>
+      <li class="header-menu__item"><a href="news.html" class="js-menu-link">новости</a></li>
+      <li class="header-menu__item"><a href="products.html" class="js-menu-link">продукция</a></li>
+      <li class="header-menu__item"><a href="rent.html" class="js-menu-link">арендаторам</a></li>
+      <li class="header-menu__item"><a href="contacts.html" class="js-menu-link">контакты</a></li>
       <li class="header-menu__item-search">
         <input type="search" placeholder="что ищем?" />
         <button class="search-icon"></button>
@@ -63,6 +61,11 @@
 </header>
 <main role="main" class="about">
 <section class="main-container">
+<ul class="breadcrumbs">
+  <li><a href="#">Главная</a></li>
+  <li><a href="#">Продукция</a></li>
+  <li>Кровля</li>
+</ul>
   <h2 class="section-title">О компании</h2>
 
   <div class="about__content">
@@ -371,21 +374,13 @@
   </div>
   <div class="copyright">
     <div class="container">
-      <p>&copy; 2016 ООО «Люберецеий производственно-коммерческий центр»</p>
+      <p>&copy; 2016 ООО «Люберецкий производственно-коммерческий центр»</p>
       <p>Разработка сайта: ГК «Индекс развития»</p>
     </div>
   </div>
 </footer>
-
-<a href="#" id="top" title="Back to top"></a>
-
 </div>
-</div>
+<a href="javascript:void(0);" class="top" title="Back to top"></a>
 <script src="js/script.js"></script>
-<script>
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').focus()
-  })
-</script>
 </body>
 </html>
