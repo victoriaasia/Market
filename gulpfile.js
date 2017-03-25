@@ -39,12 +39,10 @@ gulp.task('sass', function () {
 
 gulp.task('img', function () {
   gulp.src('source/assets/img/*.*')
-    .pipe(image())
+    // .pipe(image())
     .pipe(gulp.dest('dest/assets/img'))
     .pipe(browserSync.reload({stream:true}))
 });
-
-gulp.task('default', ['image']);
 
 gulp.task('script', function() {
   gulp.src(['source/js/jquery.min.js', 'source/js/jquery-migrate.min.js', 'source/js/bootstrap.min.js', 'source/js/slick.min.js', 'source/js/script.js'])
@@ -53,17 +51,9 @@ gulp.task('script', function() {
     .pipe(browserSync.reload({stream:true}))
 });
 
-gulp.task('serve', ['sass'], function() {
-    browserSync.init({
-        server: "dest"
-    });
-    gulp.watch("source/css/*.*", ['sass']);
-    gulp.watch("source/*.html").on('change', browserSync.reload);
-});
 
 gulp.task('dev:watch', function () {
   gulp.watch('source/css/*.*', ['sass']);
-  gulp.watch('serve', ['serve']);
   gulp.watch('source/*.html', ['html']);
   gulp.watch('source/assets/img/*.*', ['img']);
   gulp.watch('source/js/*.js', ['script']);
