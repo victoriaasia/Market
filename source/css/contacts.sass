@@ -1,0 +1,54 @@
+@import "colors"
+
+.contacts
+  position: relative
+  &__desc
+    margin: 30px 0 45px
+    p
+      margin: 10px 0
+      &:first-child
+        margin-top: 0
+    span
+      color: $blue
+    .mail
+      text-decoration: underline
+    &:after
+      content: ''
+      clear: both
+      display: table
+    img
+      float: left
+      width: 250px
+      margin-right: 25px
+  &__map-desc
+    margin: 45px 0 0
+    p
+      margin: 30px 0
+      &:last-child
+        margin-bottom: 10px
+    span
+      font-weight: bold
+
+.schemes-contacts
+  display: flex
+  margin: 30px 0
+  &__item
+    display: flex
+    margin: 30px 0 0
+    img
+      width: 250px
+      margin-right: 25px
+  .btns
+    display: flex
+    flex-direction: column
+    width: 50%
+    justify-content: flex-start
+    a
+      display: block
+      width: 180px
+    a:first-child
+      margin-bottom: 15px
+
+
+.ymaps-2-1-47-copyright, .ymaps-2-1-47-controls__bottom, .ymaps-2-1-47-controls__toolbar_right, .ymaps-2-1-47-controls__toolbar_left
+  display: none !important

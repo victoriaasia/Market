@@ -7,13 +7,16 @@ body
 *::first-letter
   text-transform: uppercase
 .wrapper
-  display: flex
-  flex-direction: column
   height: 100%
   font-size: 100%
   line-height: 1.3
   font-family: 'calibri', Arial, sans-serif
+  // text-rendering: optimizeLegibility
+  // -webkit-font-smoothing: antialiased
+  // -moz-osx-font-smoothing: grayscale
   min-width: 1170px
+  display: flex
+  flex-direction: column
 .container
   width: 1170px
   min-width: 1170px
@@ -25,7 +28,6 @@ body
   margin: 0 auto
   position: relative
   padding: 30px 3px
-  height: 100%
   box-sizing: border-box
 main
   flex: 1 0 auto
