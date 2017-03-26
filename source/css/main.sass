@@ -3,14 +3,15 @@
 
 html,
 body
-  height: 100%
+  height: auto
 *::first-letter
   text-transform: uppercase
 .wrapper
-  height: 100%
+  height: auto
   font-size: 100%
   line-height: 1.3
   font-family: 'calibri', Arial, sans-serif
+  overflow-x: hidden
   // text-rendering: optimizeLegibility
   // -webkit-font-smoothing: antialiased
   // -moz-osx-font-smoothing: grayscale
@@ -67,7 +68,7 @@ input
     color: $blue
 
 
-.modal  
+.modal
   &-content
     padding: 10px
     width: 100%
