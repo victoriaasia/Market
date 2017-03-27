@@ -15,7 +15,7 @@
     <div class="header__item">
       <div class="header__address">
         <img src="assets/img/address.png" alt="">
-        <a href="">
+        <a href="contacts.html">
           <p>Московская область,</p>
           <p>г. Люберцы, 25-й км.</p>
           <p>Новорязанского шоссе, стр.16.</p>
@@ -23,7 +23,7 @@
       </div>
       <div  class="header__map">
         <img src="assets/img/map.png" alt="">
-        <a href="" class="map-link">Схема рынка</a>
+        <p class="map-link" data-toggle="modal" data-target="#mapHeaderModal">Схема рынка</p>
       </div>
     </div>
 
@@ -59,6 +59,16 @@
     </ul>
   </nav>
 </header>
+<div class="modal fade" id="mapHeaderModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <img src="assets/img/schema.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
 <main role="main" class="news">
 <section class="main-container">
   <ul class="breadcrumbs">
